@@ -5,18 +5,16 @@ int main()
 {
 
     int input = 0;
+    int total = 0;
 
     scanf("%d", &input);
 
     for (int i=1; i<=input; i++) {
 
-        printf("%d ", i);
+        total += i;
     }
-    printf("\n");
-    for (int i=input; i>=1; i--) {
 
-        printf("%d ", i);
-    }
+    printf("Total: %d ", total);
     
     return 0;
 }
